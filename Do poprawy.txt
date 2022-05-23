@@ -1,5 +1,0 @@
-Do poprawy: 
-Seo Developerskie 
-Nie nadawaæ styli inline w html
-Menu, które siê zamyka po wyborze zak³adki
-Ciekawsze efekty wizualne
