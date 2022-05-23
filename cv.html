@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/b0ca3c165c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <link href="/cv.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Curriculum Vitae - Denis Baliński</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#exp">Doświadczenie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skill">Umiejętności</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Edukacja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hobby">Hobby</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Hobby
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="#hobby">Sport</a></li>
+                  <li><a class="dropdown-item" href="#hobby">Programowanie</a></li>
+                  <li><a class="dropdown-item" href="#hobby">Muzyka</a></li>
+
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+  <div class="main-pc d-none d-lg-block"> </div>
+  <!-- px < sm  -->
+  <div class="main-mobile d-sm-none d-flex ">
+    <h1 class="mobile"><span>Denis Baliński</span></h1>
+    <img src="./CV/img/Profilowe.png" alt="" class="img-fluid img-mobile img-thumbnail">
+    <h3 class="mobile-1"><i class="bi bi-person-fill"></i>Wiek: 27 lat</h3>
+    <h3 class="mobile-2"><i class="bi bi-telephone-fill"></i> 555-666-777</h3>
+    <h3 class="mobile-3"><i class="bi bi-envelope"></i>example@gmail.com</h3>
+    <h3 class="mobile-4"><i class="bi bi-house-fill"></i>Miejscowość, ulica kod</h3>
+    <h2 class="text-center" style="margin-top: 30px;">Jestem</h2>
+    <p class="text-center"><span class="typing"></span></p>
+    <h2 class="text-center">O sobie</h2>
+    <p class="text-start" style="text-align:justify; color: white;"> Mam 27 lat, pracuję jako Koordynator do spraw
+      Operacyjnych w PZU w Białymstoku przy ulicy Myśliwskiej 14.</p>
+  </div>
+  <!-- sm < px < md  -->
+  <div class="main-mobile d-none d-flex  d-sm-flex d-md-none"
+    style="background: linear-gradient(315deg, #2d3436 0%, #000000 74%);">
+    <h1 class="mobile"><span>Denis Baliński</span></h1>
+    <img src="./CV/img/Profilowe.png" alt="" class="img-fluid img-mobile-sm img-thumbnail">
+    <h3 class="mobile-sm1"><i class="bi bi-person-fill"></i>Wiek: 27 lat</h3>
+    <h3 class="mobile-sm2"><i class="bi bi-telephone-fill"></i> 555-666-777</h3>
+    <h3 class="mobile-sm3"><i class="bi bi-envelope"></i>example@gmail.com</h3>
+    <h3 class="mobile-sm4"><i class="bi bi-house-fill"></i>Miejscowość, ulica kod</h3>
+    <h2 class="text-center" style="margin-top: 30px;">Jestem</h2>
+    <p class="text-center"><span class="typing-1"></span></p>
+    <h2 class="text-center">O sobie</h2>
+    <p class="text-start" style="text-align:justify; font-size: 16px;"> Mam 27 lat, pracuję jako Koordynator do spraw
+      Operacyjnych w PZU w Białymstoku przy ulicy Myśliwskiej 14. </p>
+  </div>
+  <!-- md < px < lg  -->
+  <div class="main-mobile d-none d-flex  d-md-flex d-lg-none"
+    style="background: linear-gradient(315deg, #2d3436 0%, #000000 74%);">
+    <h1 class="mobile"><span>Denis Baliński</span></h1>
+    <img src="./CV/img/Profilowe.png" alt="" class="img-fluid img-mobile-md img-thumbnail">
+    <h3 class="mobile-md1"><i class="bi bi-person-fill"></i>Wiek: 27 lat</h3>
+    <h3 class="mobile-md2"><i class="bi bi-telephone-fill"></i> 555-666-777</h3>
+    <h3 class="mobile-md3"><i class="bi bi-envelope"></i>example@gmail.com</h3>
+    <h3 class="mobile-md4"><i class="bi bi-house-fill"></i>Miejscowość, ulica kod</h3>
+    <h2 class="text-center" style="margin-top: 30px;">Jestem</h2>
+    <p class="text-center"><span class="typing-2"></span></p>
+    <h2 class="text-center">O sobie</h2>
+    <p class="text-start" style="text-align:justify;"> Mam 27 lat, pracuję jako Koordynator do spraw Operacyjnych w PZU
+      w Białymstoku przy ulicy Myśliwskiej 14.</p>
+  </div>
+  <!-- lg < px  -->
+  <div class="main-mobile d-none d-flex  d-lg-flex col-4" style="background-color: #2d3436;
+background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);; flex-direction: row; flex-wrap: wrap;">
+    <img src="./CV/img/Profilowe.png" alt="" class="img-fluid img-mobile-lg img-thumbnail">
+    <div class="col-8 square-2">
+      <h2 style="padding-top: 50px; margin-left: 40px;"> Cześć, nazywam się <span>Denis Baliński</span></h2>
+      <h2 style="padding-top: 50px; margin-left: 40px;">
+        Jestem
+      </h2>
+      <p class=m-5><span class="typing-3"></span></p>
+      <H2 style="margin-top: 50px; margin-left: 40px;">O mnie</H2>
+      <P style="font-size: 26px; padding-top: 50px; margin-left: 40px;"> Mam 27 lat, pracuję jako Koordynator do spraw
+        Operacyjnych w PZU w Białymstoku przy ulicy Myśliwskiej 14. </P>
+    </div>
+    <!-- <div class="col-4 square-3" >
+        <h2>Wiek:27</h2>
+        <h2>555-666-777</h2>
+        <h2>example@gmail.com</h2>
+        <h2>Miejscowość, ulica i kod</h2>
+    </div> -->
+    <div class="col-4 square-1 rounded">
+
+    </div>
+    <div class="col-12 square-4">
+
+    </div>
+
+    <a class="rainbow" style="margin-bottom: 50px;" href="#skill"><span>Umiejętności</span></a>
+
+  </div>
+  <!-- doświadczenie  -->
+  <div class="exp" id="exp">
+    <div class="box-shadow" style="background-image: url('./CV/img/kevin-bhagat-zNRITe8NPqY-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        ">
+      <p class="exp-paragraph" style="background-color: rgba(0,0,0,0.8)">Doświadczenie</p>
+      <!-- pzu  -->
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Infolinia PZU:
+        Koordynator - Konsultant</button>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>.....</p>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+
+
+          <!-- z akordeonem  -->
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Praca w PZU
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Koordynator ds. Operacyjnych.</strong>W dużym skrócie do moich zadań należy zapewnienie
+                  ciągłości działania całego biura PZU przy Myśliwskiej 14, na której równocześnie pracuje kilka
+                  projektów PZU. Do tego dochodzą codzienne testy infolinii, pilnowanie ruchu na infolinii,
+                  przygotowanie biura na następny dzień pracy a do tego organizacja poszczególnych eventów dla
+                  pracowników PZU. Na tym stanowisku obsługujemy również proces zwany Preobsługą, przy którym
+                  wykorzystywany jest Everest i SAS. Okres 01.05.2020 do Teraz. Wcześniej praca na rejestracji szkód i
+                  świadczeń - okres od 30.10.2019 do 30.04.2020
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Praca w Transcom
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Infolinia i BackOffice</strong> Pracując w Transcom miałem możliwość pracy na infolinii jak i
+                  na BackOfficie. Na infolinii przyjmowałem połączenia przychodzące od Klientów Play odpowiadając za
+                  wyjaśnienie pozycji na fakturze, sposobu działania usług, przekazywanie informacji ogólnej jak i
+                  pomocy i prostszych błędach techniczych. Pracując na BackOffice odpowiadałem za weryfikację Umów i
+                  Aneksów zawieranych w salonach przez nowych i obecnych klientów Play, zarówno klientów indywidualnych
+                  jak i biznesowych. Okres od 30.09.2016 do 30.09.2019
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Praca w Klubie Nocnym Exclusive
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Barman w klubie nocnym</strong> Praca za barem, prowadzenie rachunków klientów, zamknięcie
+                  dnia na kasie, przygotowanie stanowiska do pracy i pozostawienie go czystym po skończonej zmianie.
+                  Okres od 01.01.2016 do 01.03.2016
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                  aria-expanded="true" aria-controls="collapseFour">
+                  Praca w Restauracji Trzy po Trzy
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Kelner na imprezach masowych</strong> Pracowałem przy obsłudze większych imprez
+                  okolicznościowych takich jak ślub, chrzest, odnowienie przysięgi, urodziny, stypy po pogrzebach. Okres
+                  od 01.08.2015 do 15.10.2015
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Praca w Restauracji Mozart
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Kelner na imprezach masowych</strong> Pracowałem przy obsłudze większych imprez
+                  okolicznościowych takich jak ślub, chrzest, odnowienie przysięgi, urodziny, stypy po pogrzebach.
+                  Okres: 08.12.2014 do 08.01.2015
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Pozostałe prace dorywcze
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Głównie prace fizyczne</strong> Praca przy rębaku, pomocnik na budowie, praca przy
+                  inwentaryzacjach.
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- z 2 akordeonami -->
+
+        </div>
+        <div class="offcanvas-body d-flex">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+        </div>
+
+      </div>
+      <!-- transcom  -->
+      <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Infolinia Transcom -
+        BackOffice i Konsultant</button>
+      <br>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Inne prace dorywcze
+        (gastronomia, prace fizyczne)</button>
+
+    </div>
+
+  </div>
+  <div class="skill" id="skill">
+    <div class="box-shadow " style="background-image: url('./CV/img/office.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    ">
+      <div>
+        <p style="background-color: rgba(0, 0, 0, 0.8);">Umiejętności</p>
+      </div>
+      <p class="skill-paragraph">HTML</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped first-skill progress-bar-animated" role="progressbar first-skill"
+          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">HTML</div>
+      </div>
+
+      <p class="skill-paragraph">CSS</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated second-skill" role="progressbar"
+          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">CSS</div>
+      </div>
+
+      <p class="skill-paragraph">JavaScript</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated third-skill" role="progressbar"
+          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%">JavaScript</div>
+      </div>
+
+      <p class="skill-paragraph">SQL</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated fourth-skill" role="progressbar"
+          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%">SQL</div>
+      </div>
+
+      <p class="skill-paragraph">Bootstrap</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated five-skill" role="progressbar"
+          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">BootStrap</div>
+      </div>
+
+      <!-- <p class="skill-paragraph">Myślenie Analityczne</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated seven-skill" role="progressbar"
+          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%">Myślenie Analityczne</div>
+      </div>
+
+      <p class="skill-paragraph">Team Work</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated six-skill" role="progressbar"
+          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%">Team Work</div>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- education -->
+  <p class="py-5 text-center" style="font-size: 36px;">Edukacja</p>
+  <div id="education" class="row row-cols-1 row-cols-md-3 g-4 py-5">
+    <div class="col">
+      <div class="card">
+        <img src="./CV/img/mgr.jpg" class="card-img-top img-fluid" alt="Magister Ekonomii">
+        <div class="card-body">
+          <h5 class="card-title">Magister Ekonomii</h5>
+          <p class="card-text" style="color: black;">Specjalizacja: Przedsiębiorstwo na rynku, Uniwersytet w
+            Białymstoku, Wydział Ekonomii i Zarządzania</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./CV/img/lic.jpg" class="card-img-top img-fluid" alt="Licencjat Ekonomia">
+        <div class="card-body">
+          <h5 class="card-title">Licencjat z Ekonomii</h5>
+          <p class="card-text" style="color: black;">Specjalizacja: Bankowość, Uniwersytet w Białymstoku, Wydział
+            Ekonomii i Zarządzania</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./CV/img/tech.jpg" class="card-img-top img-fluid" alt="Technik Ekonomista">
+        <div class="card-body">
+          <h5 class="card-title">Technik Ekonomista</h5>
+          <p class="card-text" style="color: black;">Zespół Szkół Handlowo Ekonomicznych w Białymstoku</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./CV/img/gim.jpg" class="card-img-top img-fluid" alt="Gimnazjum nr 2 w Białymstoku">
+        <div class="card-body">
+          <h5 class="card-title">Gimnazjum</h5>
+          <p class="card-text" style="color: black;">Publiczne Gimnazjum nr 2 w Białymstoku.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./CV/img/podstawowka.jpg" class="card-img-top img-fluid" alt="Szkoła Podstawowa nr 50 w Białymstoku">
+        <div class="card-body">
+          <h5 class="card-title">Szkoła Podstawowa</h5>
+          <p class="card-text" style="color: black;">Szkoła Podstawowa nr 50 w Białymstoku</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="hobby">
+    <p class="py-5 text-center" style="font-size: 36px; color: black;">Hobby</p>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./CV/img/sport.jpg" class="d-block w-100" alt="Piłka na boisku piłkarskim">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="text-shadow">
+              <h5>Sport</h5>
+              <p style="font-size: 24px; background-color: rgba (0,0,0,0.8);"><span>W szczególności </span>piłka nożna,
+                koszykówka, siatkówka i siłownia</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./CV/img/coding.jpg" class="d-block w-100" alt="Ciemna klawiatura na czarnym tle">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Programowanie</h5>
+            <p style="font-size: 24px;">Nauka tworzenia stron internetowych - obecnie frontend</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./CV/img/muzyka.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Muzyka</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <footer style=" background-color: black;
+font-size: 16px;
+text-align: center;
+height: 24px;
+color: white;">
+    <p>Denis Baliński</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./CV/cv.js"></script>
+</body>
+
+</html>
